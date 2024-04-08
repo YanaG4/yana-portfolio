@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './views/Home';
-import Skills from './views/Skills';
-import Resume from './views/Resume';
+import Skills from './views/Skills/Skills';
+import Resume from './views/Resume/Resume';
 import NavBar from './components/NavBar/NavBar';
 import Projects from './views/Projects/Projects';
 
