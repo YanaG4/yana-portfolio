@@ -1,0 +1,23 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume__expertise-options {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.resume button {
+  margin-top: 40px;
+}
+
+@media (max-width: 869px) {
+  .resume__expertise-options {
+    flex-direction: column;
+    gap: 0;
+  }
+}
