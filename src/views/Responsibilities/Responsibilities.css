@@ -1,0 +1,55 @@
+.responsibilities {
+  text-align: center;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 6%;
+  background: linear-gradient(to bottom right, #6585F4, #9E00FF);
+  border-radius: var(--border-radius);
+}
+
+.project-types {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  flex-grow: 1;
+}
+
+.project-type {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 40px 2%;
+  background: linear-gradient(to bottom right, #6585F4, #9E00FF);
+  border-radius: var(--border-radius);
+}
+
+.responsibilities__sm {
+  display: flex;
+  justify-content: center;
+}
+
+.project-type p {
+  text-align: unset;
+}
+
+@media (max-width: 600px) {
+  .project-types {
+    flex-direction: column;
+  }
+  .project-type {
+    width: 100%;
+  }
+  .project-type p {
+    text-align: center;
+   }
+}

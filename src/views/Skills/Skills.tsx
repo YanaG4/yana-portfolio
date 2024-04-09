@@ -21,7 +21,7 @@ export default function Skills() {
               />
           ))}
         </Masonry>
-        </ResponsiveMasonry>
+      </ResponsiveMasonry>
       </div>
     </section>
   )
