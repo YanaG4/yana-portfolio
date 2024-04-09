@@ -28,7 +28,7 @@ const skillDesign: Array<string> = [
   'Figma', 'Adobe Photoshop', 'Adobe Illustrator',
 ]
 
-export const mainSkills: Array<string> = [
+const mainSkills: Array<string> = [
   'TypeScript', 'JavaScript', 'React', 'Redux', 'Figma',
 ]
 
@@ -59,3 +59,5 @@ export const skills: Array<SkillsType> = [
     description: skillDesign,
   },
 ];
+
+export const isSkillImportant = (skill: string) => mainSkills.includes(skill);
