@@ -1,5 +1,4 @@
 .expertise {
-  margin-top: 60px;
   background: linear-gradient(to bottom right, #6585F4, #9E00FF);
   padding: 40px 6%;
   display: flex;
@@ -13,13 +12,4 @@
   width: 160px;
   height: auto;
   object-fit: fill;
-}
-
-@media (max-width: 869px) {
-  .expertise {
-    margin-top: 40px;
-  }
-  .expertise:first-child {
-    margin-top: 60px;
-  }
 }

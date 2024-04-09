@@ -10,14 +10,21 @@ body {
   padding: 0 5%;
 }
 
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
 .section-heading {
   text-align: center;
   color: var(--primary-blue-500);
-  margin-bottom: 40px;
 }
 
 .section-description {
   padding: 0 20%;
+  margin-top: -28px;
 }
 
 .item-heading {

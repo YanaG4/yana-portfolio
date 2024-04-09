@@ -6,7 +6,7 @@ import './Projects.css'
 
 export default function Projects() {
   return (
-    <section id='projects' className='projects'>
+    <section id='projects' className='projects section-container'>
       <h1 className='section-heading'>PROJECTS</h1>
       <div className='projects-gallery'>
         {projects.map((project: ProjectType) => (
