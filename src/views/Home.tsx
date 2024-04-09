@@ -1,5 +1,6 @@
 import React from 'react';
-import photo from '../assets/img/img.png'
+import photo from '../assets/img/img.png';
+import SocialMedia from '../components/SocialMedia/SocialMedia';
 
 import './Home.css';
 
@@ -17,6 +18,7 @@ export default function Home() {
           <h2>UI/UX Designer</h2>
           <p>I have 7 years of work experience as a designer, so I can make a Web App look good according to the best UI/UX standards.</p>
         </div>
+        <SocialMedia />
         <div className='home__button-container'>
           <button>HIRE ME</button>
           <button className='secondary-button'>LEARN MORE</button>
