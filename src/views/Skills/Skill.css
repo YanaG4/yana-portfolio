@@ -7,3 +7,11 @@
   gap: 40px;
   border-radius: var(--border-radius);
 }
+
+.skill-item {
+  list-style-type: none;
+  text-align: center;
+  line-height: 160%;
+  font-size: 18px;
+  font-weight: 300;
+}

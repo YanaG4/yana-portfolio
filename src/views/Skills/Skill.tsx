@@ -11,7 +11,9 @@ export default function Skill({name, description, image}: SkillsProps) {
     <div className='skill'>
       {image && <img src={image} alt={image} />}
       <h3 className='item-heading'>{name}</h3>
-      <SkillItem description={description} />
+      <div className='skill-list'>
+        <SkillItem description={description} />
+      </div>
     </div>
   )
 }
