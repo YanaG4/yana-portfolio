@@ -1,0 +1,15 @@
+.expertise {
+  background: linear-gradient(to bottom right, #6585F4, #9E00FF);
+  padding: 40px 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  border-radius: var(--border-radius);
+}
+
+.expertise img{
+  width: 160px;
+  height: auto;
+  object-fit: fill;
+}
