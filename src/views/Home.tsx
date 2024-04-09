@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <SocialMedia />
         <div className='home__button-container'>
-          <button>HIRE ME</button>
+          <button onClick={() => window.open('https://www.linkedin.com/in/yana-glushychkina-5a5592263', '_blank', 'noopener,noreferrer')}>HIRE ME</button>
           <button className='secondary-button'>LEARN MORE</button>
         </div>
         </div>
