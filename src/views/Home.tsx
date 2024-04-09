@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <div className='home__button-container'>
           <button>HIRE ME</button>
-          <button>LEARN MORE</button>
+          <button className='secondary-button'>LEARN MORE</button>
         </div>
         </div>
       <div className='home__img-container'>
