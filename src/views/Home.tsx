@@ -1,6 +1,7 @@
 import React from 'react';
 import photo from '../assets/img/img.png';
 import SocialMedia from '../components/SocialMedia/SocialMedia';
+import { Link } from 'react-scroll';
 
 import './Home.css';
 
@@ -21,7 +22,7 @@ export default function Home() {
         <SocialMedia />
         <div className='home__button-container'>
           <button onClick={() => window.open('https://www.linkedin.com/in/yana-glushychkina-5a5592263', '_blank', 'noopener,noreferrer')}>HIRE ME</button>
-          <button className='secondary-button'>LEARN MORE</button>
+          <Link to="responsibilities" smooth={true} duration={500} offset={-72}><button className='secondary-button'>LEARN MORE</button></Link>
         </div>
         </div>
       <div className='home__img-container'>
