@@ -17,7 +17,7 @@ const skillOther: Array<string> = [
 ]
 
 const skillTestsCiCd: Array<string> = [
-  'Jest', 'RTL', 'Cypress', 'CodeConv', 'git', 'GitHub', 'BitBucket', 'Sonar Cloud', 'Webpack', 'Babel', 'Digital Ocean', 'GitHub Pages',
+  'Jest', 'RTL', 'Cypress', 'CodeCov', 'git', 'GitHub', 'BitBucket', 'Sonar Cloud', 'Webpack', 'Babel', 'Digital Ocean', 'GitHub Pages',
 ]
 
 const skillTools: Array<string> = [

@@ -9,6 +9,7 @@ export default function SkillItem({description}: SkillItemProps) {
     <ul className='skill-items'>
       {description.map(skill => (
         <li className={`${isSkillImportant(skill) ? 'skill-item--main' : ''}`}>
+          {isSkillImportant(skill) && <Star />}
           {skill}
         </li>
       ))}
