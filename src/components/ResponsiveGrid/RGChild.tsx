@@ -12,12 +12,6 @@ export const StyledChild: React.FC<StyledChildProps> = ({ index, children }) => 
 
   const Child = styled.div`
     order: ${getOrder(index)};
-    flex: 1;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 250px;
     grid-column: ${activeIndex === index ? 'span 2' : 'span 1'};
     grid-row: ${activeIndex === index ? 'span 2' : 'span 1'};
   `;
