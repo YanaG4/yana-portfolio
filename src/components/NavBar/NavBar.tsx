@@ -38,7 +38,7 @@ export default function NavBar() {
         </li>
       ))}
       </ul>      
-      <button className="navbar__burger" onClick={() => setIsOpen(!isOpen)}>
+      <button className={`navbar__burger ${isOpen ? 'navbar__burger--cross' : ''}`} onClick={() => setIsOpen(!isOpen)}>
         <div></div>
         <div></div>
         <div></div>

@@ -55,6 +55,9 @@
   margin-right: 16px;
   padding: 8px;
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
 }
 
 .navbar__burger div {
@@ -62,7 +65,8 @@
   height: 3px;
   border-radius: 16px;
   background-color: white;
-  margin: 6px;
+  margin: 3px 0;
+  transition: opacity 0.1s ease, transform .6s ease;
 }
 
 @media (max-width: 729px) {
@@ -87,7 +91,25 @@
   }
   
   .navbar__burger {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*X state when open */
+  .navbar__burger--cross div:nth-child(1) {
+    width: 26px;
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .navbar__burger--cross div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar__burger--cross div:nth-child(3) {
+    width: 26px;
+    transform: rotate(-45deg) translate(6px, -6px);
   }
 
   .nav-links--close {
