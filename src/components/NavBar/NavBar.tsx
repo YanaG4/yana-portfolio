@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
 
 import './NavBar.css';
@@ -18,6 +18,20 @@ const navItems: NavItem[] = [
 ];
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const burgerRef = useRef<any>(null);
+
+  useEffect(() => {
+    const handleClick = (event: MouseEvent | TouchEvent) => {
+      if(burgerRef.current && !burgerRef.current.contains(event.target))
+        setIsOpen(false);
+    };
+    document.addEventListener('mouseup', handleClick);
+    document.addEventListener('touchend', handleClick);
+    return () => {
+      document.removeEventListener('mouseup', handleClick);
+      document.removeEventListener('touchend', handleClick);
+    };
+  }, []);
 
   return (
     <nav className="navbar--top">
@@ -38,7 +52,7 @@ export default function NavBar() {
         </li>
       ))}
       </ul>      
-      <button className={`navbar__burger ${isOpen ? 'navbar__burger--cross' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+      <button ref={burgerRef} className={`navbar__burger ${isOpen ? 'navbar__burger--cross' : ''}`} onClick={() => setIsOpen(!isOpen)}>
         <div></div>
         <div></div>
         <div></div>
