@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-scroll';
 
 import './NavBar.css';
@@ -17,10 +17,11 @@ const navItems: NavItem[] = [
   { to: 'skills', text: 'SKILLS' },
 ];
 export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="navbar--top">
-      <ul>
+      <ul className={`nav-links ${isOpen ? 'nav-links--open' : 'nav-links--close'}`}>
       {navItems.map((item) => (
         <li key={item.to}>
           <Link
@@ -36,7 +37,12 @@ export default function NavBar() {
           </Link>
         </li>
       ))}
-      </ul>
+      </ul>      
+      <button className="navbar__burger" onClick={() => setIsOpen(!isOpen)}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
   </nav>
   )
 }
