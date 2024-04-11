@@ -11,7 +11,7 @@ export default function Projects() {
 
   return (
     <section id='projects' className='projects section-container'>
-      <h1 className='section-heading'>PROJECTS</h1>
+      <h1 className='section-heading'>FEATURED PROJECTS</h1>
       <ResponsiveGrid
       columnsCountBreakPoints={{ 100: 2, 729: 3 }}
       activeIndex={activeProject.index}
