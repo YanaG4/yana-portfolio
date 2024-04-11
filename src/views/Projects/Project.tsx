@@ -1,6 +1,7 @@
 import React from 'react';
 import type { ProjectType } from '../../constants/projects';
 import ProjectWrapper from './ProjectWrapper';
+import classNames from 'classnames';
 
 import './Project.css'
 
@@ -10,14 +11,19 @@ interface ProjectProps extends ProjectType {
 }
 
 export default function Project({ name, description="", image, demo, source, techStack="", onClick, active }: ProjectProps) {
-
+  const projectClasses = classNames(
+    'project',
+    {
+      'project--active' : active,
+    }
+  )
   function handleOnClick(link: string) {
     window.open(link, '_blank', 'noopener,noreferrer');
   }
 
   return (
-    <li className={`project ${active ? "project--active" : ""}`} onClick={onClick}>
-      <ProjectWrapper isImage={Boolean(image)} title={name} isMainElement={active}>
+    <li className={projectClasses} onClick={onClick}>
+      <ProjectWrapper isImage={Boolean(image)} title={name}>
         <p className="project__description">{description}</p>
         { active && 
           <>

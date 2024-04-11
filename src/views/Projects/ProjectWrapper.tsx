@@ -6,25 +6,23 @@ import './ProjectWrapper.css';
 interface ProjectWrapperProps {
   isImage: boolean;
   title?: string;
-  isMainElement: boolean;
   children: React.ReactNode;
 }
 
-export default function ProjectWrapper({isImage, title, isMainElement, children}: ProjectWrapperProps) {
+export default function ProjectWrapper({isImage, title, children}: ProjectWrapperProps) {
   const overlayClasses = classNames(
-    'project__overlay',
+    'overlay-wrapper',
     {
-      'project__overlay--active' : !isImage,
-      'project__overlay--main' : isMainElement,
+      'overlay-wrapper--active' : !isImage,
     }
   )
   return (
     <>
-    <div className={overlayClasses}></div>
+    <div className='project__overlay'></div>
     
-      <div className='overlay-wrapper'>
+      <div className={overlayClasses}>
         <div className='overlay-content'>
-          <div className="item-heading overlay-title">{title}</div>
+          {title && <div className="item-heading overlay-title">{title}</div>}
           <div className='project__info'>{children}</div>
         </div>
       </div>
