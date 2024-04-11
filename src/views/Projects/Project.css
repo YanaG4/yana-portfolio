@@ -82,6 +82,9 @@
   .project .item-heading {
     font-size: 20px;
   }
+  .project--active .item-heading {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 729px) {
@@ -99,5 +102,8 @@
   }
   .project__overlay {
     padding: 8px;
+  }
+  .project--active .item-heading {
+    font-size: 20px;
   }
 }

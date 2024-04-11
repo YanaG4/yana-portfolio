@@ -25,6 +25,7 @@ body {
 .section-description {
   padding: 0 20%;
   margin-top: -28px;
+  text-align: justify;
 }
 
 .item-heading {
