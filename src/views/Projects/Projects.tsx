@@ -26,7 +26,7 @@ export default function Projects() {
           techStack={project.techStack}
           source={project.source}
           demo={project.demo}
-          onClick={() => setActiveProject({ name: project.name, index })}
+          onClick={() => {project.name && setActiveProject({ name: project.name, index })}}
           active={activeProject.name === project.name}
         />
         </StyledChild>
