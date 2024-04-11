@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from '../assets/img/img.png';
+import photo from '../assets/img/photo.png';
 import SocialMedia from '../components/SocialMedia/SocialMedia';
 import { Link } from 'react-scroll';
 
