@@ -17,9 +17,8 @@ export default function Projects() {
       activeIndex={activeProject.index}
     >
       {projects.map((project: ProjectType, index) => (
-        <StyledChild index={index}>
+        <StyledChild index={index} key={project.name ? project.name : project.description}>
           <Project
-          key={project.name}
           name={project.name}
           description={project.description}
           image={project.image}

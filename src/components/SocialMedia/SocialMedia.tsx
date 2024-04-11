@@ -7,7 +7,7 @@ export default function SocialMedia() {
   return (
     <div className='social-media'>
       {socialMedia.map(sm => (
-        <div className='sm'>
+        <div key={sm.name} className='sm'>
           <button onClick={sm.action} className={`sm-circle ${sm.text ? 'sm-circle--text' : ''}`}>{sm.Icon}</button>
           {sm.text && <div className='sm-text'>{sm.text}</div>}
         </div>
