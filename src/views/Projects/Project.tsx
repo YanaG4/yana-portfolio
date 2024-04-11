@@ -17,7 +17,7 @@ export default function Project({ name, description="", image, demo, source, tec
 
   return (
     <li className={`project ${active ? "project--active" : ""}`} onClick={onClick}>
-      <ProjectWrapper isImage={Boolean(image)} title={name}>
+      <ProjectWrapper isImage={Boolean(image)} title={name} isMainElement={active}>
         <p className="project__description">{description}</p>
         { active && 
           <>

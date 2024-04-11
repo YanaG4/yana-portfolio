@@ -50,6 +50,9 @@
 }
 
 @media (max-width: 729px) {
+  .overlay-content {
+    gap: 6px;
+  }
   .project {
     min-height: 180px;
   }
