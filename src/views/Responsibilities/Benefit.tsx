@@ -1,5 +1,7 @@
 import React from 'react'
-import { BenefitsType } from '../../constants/responsibilities/benefits'
+import { BenefitsType } from '../../constants/responsibilities/benefits';
+
+import './Benefit.css';
 
 export default function Benefit({name, description, image}: BenefitsType) {
   return (
