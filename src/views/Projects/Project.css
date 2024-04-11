@@ -18,12 +18,11 @@
   padding: 20px;
   position: absolute;
   z-index: 30;
-  display: flex;
   height: 100%;
   width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 8px;
   white-space: normal;
   background-color: var(--primary-blue-500);
@@ -31,7 +30,9 @@
   text-align: center;
   opacity: 0;
   transition: opacity 500ms;
-  cursor: pointer;  
+  cursor: pointer;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .project__overlay--active {
@@ -77,11 +78,26 @@
   font-size: 18px;
 }
 
-@media (max-width: 729px) {
-  .project__name {
+@media (max-width: 1180px) {
+  .project .item-heading {
     font-size: 20px;
   }
+}
+
+@media (max-width: 729px) {
   .project {
     min-height: 180px;
+  }
+}
+
+@media (max-width: 550px) {
+  .project__info p {
+    font-size: 14px;
+  }
+  .project__info span {
+    font-size: 15px;
+  }
+  .project__overlay {
+    padding: 8px;
   }
 }
