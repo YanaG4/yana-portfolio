@@ -23,6 +23,9 @@ export default function Projects() {
           name={project.name}
           description={project.description}
           image={project.image}
+          techStack={project.techStack}
+          source={project.source}
+          demo={project.demo}
           onClick={() => setActiveProject({ name: project.name, index })}
           active={activeProject.name === project.name}
         />

@@ -24,6 +24,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   white-space: normal;
   background-color: var(--primary-blue-500);
   color: white;
@@ -52,6 +53,28 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.project__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.project__info p {
+  text-align: center;
+}
+
+.project__button-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.project__description span {
+  font-weight: 600;
+  color: #e0e0e0;
+  font-size: 18px;
 }
 
 @media (max-width: 729px) {
