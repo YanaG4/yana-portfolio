@@ -8,9 +8,10 @@ import './Project.css'
 interface ProjectProps extends ProjectType {
   onClick: () => void;
   active: boolean;
+  isShowInfo: boolean;
 }
 
-export default function Project({ name, description="", image, demo, source, techStack="", onClick, active }: ProjectProps) {
+export default function Project({ name, description="", image, demo, source, techStack="", active, onClick, isShowInfo }: ProjectProps) {
   const projectClasses = classNames(
     'project',
     {
@@ -23,7 +24,7 @@ export default function Project({ name, description="", image, demo, source, tec
 
   return (
     <li className={projectClasses} onClick={onClick}>
-      <ProjectWrapper isImage={Boolean(image)} title={name}>
+      <ProjectWrapper isImage={Boolean(image)} title={name} isShowInfo={isShowInfo && active} >
         <p className="project__description">{description}</p>
         { active && 
           <>

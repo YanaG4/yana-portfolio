@@ -7,7 +7,15 @@ import { StyledChild } from '../../components/ResponsiveGrid/RGChild';
 import './Projects.css'
 
 export default function Projects() {
-  const [activeProject, setActiveProject] = useState({name: projects[0].name, index: 0});
+  const [activeProject, setActiveProject] = useState({name: projects[0].name, index: 0, isShowInfo: false});
+
+  function handleProjectClick(name: string, index: number) {
+    if(!name) return;
+    if(name !== activeProject.name)
+      setActiveProject({ name, index, isShowInfo: false })
+    else
+      setActiveProject((prev) => ({ ...prev, isShowInfo: !prev.isShowInfo }))
+  }
 
   return (
     <section id='projects' className='projects section-container'>
@@ -19,15 +27,16 @@ export default function Projects() {
       {projects.map((project: ProjectType, index) => (
         <StyledChild index={index} key={project.name ? project.name : project.description}>
           <Project
-          name={project.name}
-          description={project.description}
-          image={project.image}
-          techStack={project.techStack}
-          source={project.source}
-          demo={project.demo}
-          onClick={() => {project.name && setActiveProject({ name: project.name, index })}}
-          active={activeProject.name === project.name}
-        />
+            name={project.name}
+            description={project.description}
+            image={project.image}
+            techStack={project.techStack}
+            source={project.source}
+            demo={project.demo}
+            onClick={() => handleProjectClick(project.name, index)}
+            active={activeProject.name === project.name}
+            isShowInfo={activeProject.isShowInfo}
+          />
         </StyledChild>
       ))} 
     </ResponsiveGrid>
