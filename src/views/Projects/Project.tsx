@@ -3,6 +3,7 @@ import type { ProjectType } from '../../constants/projects';
 import ProjectWrapper from './ProjectWrapper';
 import classNames from 'classnames';
 import { GitHUb } from '../../components/Icons/SocialMediaIcons';
+import { Demo } from '../../components/Icons/Icons';
 
 import './Project.css'
 
@@ -34,7 +35,7 @@ export default function Project({ name, description="", image, demo, source, tec
           <>
             {techStack && <p className="project__description"><span>TechStack: </span>{techStack}</p> }
             <div className='project__button-container'>
-              {demo && <button className='button--white' onClick={(e) => handleOnClick(e, demo)}>DEMO</button>}
+              {demo && <button className='button--white' onClick={(e) => handleOnClick(e, demo)}><Demo />DEMO</button>}
               {source && <button className='button--white' onClick={(e) => handleOnClick(e, source)}><GitHUb />CODE</button>}
             </div>              
           </>          

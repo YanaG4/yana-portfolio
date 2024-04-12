@@ -1,8 +1,8 @@
-import './SocialMediaIcons.css'
+import './Icons.css'
 
 function GitHUb() {
   return (
-    <svg className="sm-icon" fill="currentColor" overflow="hidden" version="1.1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    <svg className="icon" fill="currentColor" overflow="hidden" version="1.1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
       <path d="m465.98 1001.7a89.578 89.578 0 0 1-89.889-88.955l-0.356-63.666c-176.66 38.422-213.93-74.93-213.93-74.93-28.895-73.372-70.523-92.873-70.523-92.873-57.61-39.446 
       4.364-38.645 4.364-38.645 63.71 4.452 97.28 65.447 97.28 65.447 56.631 97.058 148.57 69.009 184.76 52.803 5.699-41.049 22.172-69.053 40.337-84.947-141.04-16.028-289.3-70.523-289.3-313.79 
       0-69.32 24.799-125.95 65.447-170.43-6.589-16.028-28.316-80.584 6.144-168.02 0 0 53.337-17.052 174.66 65.09a609.28 609.28 0 0 1 158.94-21.37c53.915 0.223 108.28 7.257 159.03 21.37 121.23-82.141 
@@ -14,7 +14,7 @@ function GitHUb() {
 
 function LinkedIn() {
   return (
-    <svg className="sm-icon" fill="currentColor" overflow="hidden" version="1.1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    <svg className="icon" fill="currentColor" overflow="hidden" version="1.1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
       <path d="m76.43 361.73h185.95v597.36h-185.95v-597.36zm93.03-296.97c59.45 0 107.65 48.27 107.65 107.62 0 59.416-48.202 107.68-107.65 107.68-59.662 0-107.77-48.263-107.77-107.68-1e-3 -59.354 
       48.109-107.62 107.77-107.62m209.48 296.97h178.07v81.644h2.526c24.76-47.003 85.404-96.498 175.79-96.498 187.96 0 222.73 123.67 222.73 284.55v327.66h-185.6v-290.43c0-69.336-1.374-158.46-96.56-158.46-96.684 
       0-111.42 75.456-111.42 153.33v295.56h-185.53v-597.36z" fill="currentColor"/>
@@ -24,7 +24,7 @@ function LinkedIn() {
 
 function Mail() {
   return (
-    <svg className="sm-icon" overflow="hidden"version="1.1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    <svg className="icon" overflow="hidden"version="1.1" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
       <path d="m817.15 237.06h-609.79l306.69 253.95z" fill="currentColor"/>
       <path d="m859.14 251.39-332.8 278.53c-3.584 3.072-7.68 4.608-11.776 4.608-4.608 0-8.704-1.536-11.776-4.096l-337.41-279.55c-10.24 9.728-16.896 23.04-16.896 38.4v444.93c0 28.672 23.552 52.224 52.224 
       52.224h623.1c13.824 0 27.136-5.632 36.864-15.36s15.36-23.04 15.36-36.864v-444.93c-0.512-14.848-6.656-28.672-16.896-37.888z" fill="currentColor"/>
