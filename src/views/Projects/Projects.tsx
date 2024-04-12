@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ProjectType, projects } from '../../constants/projects';
 import Project from './Project';
 import { ResponsiveGrid } from '../../components/ResponsiveGrid/RG';
@@ -8,13 +8,29 @@ import './Projects.css'
 
 export default function Projects() {
   const [activeProject, setActiveProject] = useState({name: projects[0].name, index: 0, isShowInfo: false});
+  const [lastInteractionType, setLastInteractionType] = useState<string | null>(null);
 
-  function handleProjectClick(name: string, index: number) {
-    if(!name) return;
-    if(name !== activeProject.name)
-      setActiveProject({ name, index, isShowInfo: false })
-    else
-      setActiveProject((prev) => ({ ...prev, isShowInfo: !prev.isShowInfo }))
+  useEffect(() => {
+    const resetInteractionType = () => setLastInteractionType(null);
+    window.addEventListener('touchend', resetInteractionType);
+    return () => window.removeEventListener('touchend', resetInteractionType);
+  }, []);
+
+  function handleProjectClick(e: React.MouseEvent | React.TouchEvent, name: string, index: number) {
+    e.stopPropagation();
+    if (!name) return;
+
+    const eventType = e.nativeEvent instanceof TouchEvent ? 'touch' : 'mouse';
+    if (eventType === 'mouse' && lastInteractionType === 'touch') return;  
+    setLastInteractionType(eventType);
+
+    if (name === activeProject.name) {
+      setActiveProject((prev: any) => ({ ...prev, isShowInfo: !prev.isShowInfo }));
+      return;
+    }
+
+    const isShowInfoImmediately = eventType === 'touch';
+    setActiveProject({ name, index, isShowInfo: isShowInfoImmediately });
   }
 
   return (
@@ -33,7 +49,7 @@ export default function Projects() {
             techStack={project.techStack}
             source={project.source}
             demo={project.demo}
-            onClick={() => handleProjectClick(project.name, index)}
+            onClick={(e) => handleProjectClick(e, project.name, index)}
             active={activeProject.name === project.name}
             isShowInfo={activeProject.isShowInfo}
           />
