@@ -29,6 +29,8 @@ export default function NavBar() {
           <Link
             to={item.to}
             text={item.text}
+            className='navbar__link--top'
+            activeClass='navbar__link--active'
           />
         </li>
       ))}

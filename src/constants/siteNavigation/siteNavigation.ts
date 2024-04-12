@@ -22,7 +22,7 @@ export type NavSection = {
 
 export const navSections: NavSection[] = [
   {
-    title: "",
+    title: "Navigation",
     links: navItems,
     linkType: 'scroll',
   }, 
@@ -30,5 +30,5 @@ export const navSections: NavSection[] = [
     title: 'Projects',
     links: navProjects,
     linkType: 'open',
-  }
+  },
 ]

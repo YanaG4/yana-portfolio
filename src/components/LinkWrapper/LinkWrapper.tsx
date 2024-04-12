@@ -6,9 +6,11 @@ const HEADER_HEIGHT = 72 + 2; //additional offset for more precise spying
 interface LinkProps {
   to: string;
   text: string;
+  className?: string;
+  activeClass?: string;
 }
 
-export function Link({to, text}: LinkProps) {
+export function Link({to, text, className, activeClass}: LinkProps) {
   return (
     <RSLink
       to={to}
@@ -16,8 +18,8 @@ export function Link({to, text}: LinkProps) {
       duration={500}
       offset={-HEADER_HEIGHT}
       spy={true}
-      className='navbar__link--top'
-      activeClass='navbar__link--active'
+      className={className}
+      activeClass={activeClass}
     >
       {text}
     </RSLink>
