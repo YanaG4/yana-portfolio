@@ -1,10 +1,10 @@
 import './App.css';
 import Home from './views/Home';
 import Skills from './views/Skills/Skills';
-import Resume from './views/Resume/Resume';
 import NavBar from './components/NavBar/NavBar';
 import Projects from './views/Projects/Projects';
 import Responsibilities from './views/Responsibilities/Responsibilities';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Projects />
         <Skills />
       </div>
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ProjectType, projects } from '../../constants/projects';
 import Project from './Project';
 import { ResponsiveGrid } from '../../components/ResponsiveGrid/RG';
