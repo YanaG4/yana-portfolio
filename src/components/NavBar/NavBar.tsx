@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from '../LinkWrapper/LinkWrapper';
-import { navItems } from '../../constants/siteNavigation';
+import { navItems } from '../../constants/siteNavigation/siteNavigation';
 
 import './NavBar.css';
 
