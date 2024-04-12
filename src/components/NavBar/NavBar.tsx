@@ -1,10 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-scroll';
+import { Link } from '../LinkWrapper/LinkWrapper';
 import { navItems } from '../../constants/siteNavigation';
 
 import './NavBar.css';
 
-const HEADER_HEIGHT = 72;
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const burgerRef = useRef<any>(null);
@@ -29,15 +28,8 @@ export default function NavBar() {
         <li key={item.to}>
           <Link
             to={item.to}
-            smooth={true}
-            duration={500}
-            offset={-HEADER_HEIGHT}
-            spy={true}
-            className='navbar__link--top'
-            activeClass='navbar__link--active'
-          >
-            {item.text}
-          </Link>
+            text={item.text}
+          />
         </li>
       ))}
       </ul>      
