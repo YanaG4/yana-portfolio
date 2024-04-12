@@ -1,3 +1,7 @@
 .benefit img {
   height: 100px;
 }
+
+.benefit p {
+  text-align: justify;
+}

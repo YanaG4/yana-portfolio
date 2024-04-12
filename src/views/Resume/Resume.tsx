@@ -12,6 +12,7 @@ export default function Resume() {
       <div className='resume__expertise-options'>
         {expertise.map(field => (
           <Expertise
+            key={field.name}
             name={field.name}
             description={field.description}
             image={field.image}

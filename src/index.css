@@ -25,6 +25,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   cursor: pointer;
   text-align: center;
   vertical-align: middle;
@@ -60,5 +61,37 @@ p {
   line-height: 160%;
   font-size: 18px;
   font-weight: 300;
-  text-align: justify;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #b7d6fc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue-500); 
+  border-radius: 100px;
+  border: 3px #b7d6fc solid;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-blue-700); 
+}
+
+body ::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: var(--primary-blue-300);
+  border-radius: 100px;
+  border: none;
+  background-clip: padding-box;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: #656aff; 
 }

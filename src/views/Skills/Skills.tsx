@@ -15,6 +15,7 @@ export default function Skills() {
         <Masonry gutter='8px'>
           {skills.map(field => (
             <Skill
+              key={field.name}
               name={field.name}
               description={field.description}
               image={field.image}

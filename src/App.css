@@ -25,6 +25,7 @@ body {
 .section-description {
   padding: 0 20%;
   margin-top: -28px;
+  text-align: justify;
 }
 
 .item-heading {
@@ -50,6 +51,20 @@ body {
   background-color: var(--primary-blue-800);
   color: white;
 }
+/* white button */
+.button--white {
+  font-weight: 600;
+  background-color: white;
+  color: var(--primary-blue-500)
+}
+.button--white:hover {
+  background-color: #e0e0e0;
+  color: var(--primary-blue-500)
+}
+.button--white:active {
+  background-color: #e0e0e0;
+  color: var(--primary-blue-800)
+}
 
 @media (max-width: 869px) {
   .section-description {
@@ -60,6 +75,6 @@ body {
 @media (max-width: 450px) {
   .section-heading {
     text-align: center;
-    font-size: 34px;
+    font-size: 32px;
   }
 }

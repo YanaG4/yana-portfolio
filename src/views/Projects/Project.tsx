@@ -1,22 +1,47 @@
 import React from 'react';
 import type { ProjectType } from '../../constants/projects';
+import ProjectWrapper from './ProjectWrapper';
+import classNames from 'classnames';
+import { GitHUb } from '../../components/Icons/SocialMediaIcons';
+import { Demo } from '../../components/Icons/Icons';
 
 import './Project.css'
 
 interface ProjectProps extends ProjectType {
-  onClick: () => void;
+  onClick?: React.MouseEventHandler;
+  onMouseDown?: React.MouseEventHandler;
+  onTouchEnd?: React.TouchEventHandler;
   active: boolean;
-  order?: number | '';
+  isShowInfo: boolean;
 }
 
-export default function Project({ name, description='My another project', image, onClick, active, order }: ProjectProps) {
+export default function Project({ name, description="", image, demo, source, techStack="", active, isShowInfo, ...rest }: ProjectProps) {
+  const projectClasses = classNames(
+    'project',
+    {
+      'project--active' : active,
+    }
+  )
+  function handleOnClick(e: React.MouseEvent | React.TouchEvent, link: string) {
+    e.stopPropagation();
+    window.open(link, '_blank', 'noopener,noreferrer');
+  }
+
   return (
-    <li className={`project ${active ? "project--active" : ""}`} onClick={onClick} style={{order}}>
-      <div className={`project__overlay ${!image ? "project__overlay--active": ""}`}>
-        <p className="project__name">{name}</p>
+    <div className={projectClasses} {...rest}>
+      <ProjectWrapper isImage={Boolean(image)} title={name} isShowInfo={isShowInfo && active} >
         <p className="project__description">{description}</p>
-      </div>
-      {image && <img alt={name} src={image} className="project__image" />}
-    </li>
+        { active && 
+          <>
+            {techStack && <p className="project__description"><span>TechStack: </span>{techStack}</p> }
+            <div className='project__button-container'>
+              {demo && <button className='button--white' onClick={(e) => handleOnClick(e, demo)}><Demo />DEMO</button>}
+              {source && <button className='button--white' onClick={(e) => handleOnClick(e, source)}><GitHUb />CODE</button>}
+            </div>              
+          </>          
+        }
+      </ProjectWrapper>
+    {image && <img alt={name} src={image} className="project__image" />}
+    </div>
   )
 }
