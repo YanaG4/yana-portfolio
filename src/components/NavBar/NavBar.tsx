@@ -1,21 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-scroll';
+import { navItems } from '../../constants/siteNavigation';
 
 import './NavBar.css';
 
-interface NavItem {
-  to: string;
-  text: string;
-}
-
 const HEADER_HEIGHT = 72;
-
-const navItems: NavItem[] = [
-  { to: 'home', text: 'HOME' },
-  { to: 'responsibilities', text: 'RESPONSIBILITIES' },
-  { to: 'projects', text: 'PROJECTS' },
-  { to: 'skills', text: 'SKILLS' },
-];
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const burgerRef = useRef<any>(null);
