@@ -5,3 +5,9 @@
 .benefit p {
   text-align: justify;
 }
+
+@media (max-width: 420px) {
+  .benefit p {
+    text-align: center;
+  }
+}
