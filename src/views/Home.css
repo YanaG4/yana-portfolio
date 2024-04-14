@@ -9,7 +9,7 @@
 .home__text-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .home__text-item {
@@ -19,13 +19,8 @@
 }
 
 .home__button-container {
-  margin-top: 16px;
   display: flex;
   gap: 12px
-}
-
-.home__text-container h1 {
-  margin-bottom: 8px;
 }
 
 .home__text-container h1 span {
