@@ -81,17 +81,17 @@ p {
 }
 
 body ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   background-color: transparent;
 }
 
 body ::-webkit-scrollbar-thumb {
-  background: var(--primary-blue-300);
+  background: white;
   border-radius: 100px;
   border: none;
   background-clip: padding-box;
 }
 
 body ::-webkit-scrollbar-thumb:hover {
-  background: #656aff; 
+  background: #e0e0e0;
 }
