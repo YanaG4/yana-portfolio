@@ -23,15 +23,15 @@ export const projects: Array<ProjectType> = [
   },
   {
     name: "Public Holiday Calendar",
-    description: "UI part of the app that shows events for the chosen countries! Also you can add it to your Mail client or subscribe to the e-mail reminders.",
-    techStack: "JS/ES6+, React, CSS, Axios, HTML, MUI, Figma, REST, Jest, RTL, Codecov",
+    description: "UI part of the app that shows public holidays for the chosen countries! Also the app could deliver them to Mail clients or work via e-mail subscription. The back-end is down ATM :(",
+    techStack: "JS/ES6+, React, CSS, Axios, HTML, MUI, Figma, REST, Jest, RTL, Cypress, Codecov",
     source: "https://github.com/YanaG4/public-holiday-calendar",
     demo: "https://yanag4.github.io/public-holiday-calendar/",
     image: PHC,
   },
   {
     name: "Currency Converter",
-    description: "Provides an actual Central Bank exchange rates for more than 170 currencies!",
+    description: "Provides current European Central Bank exchange rates for more than 170 currencies! Fluctuation charts included.",
     techStack: "JS/ES6+, React, Redux Toolkit, Redux Thunk, SCSS, HTML, CRA, API Fetching (axios), React Hooks, React Router, Responsive design, Swiper, Recharts",
     source: "https://github.com/YanaG4/currency-converter",
     demo: "https://github.com/YanaG4/currency-converter",
@@ -39,7 +39,7 @@ export const projects: Array<ProjectType> = [
   },
   {
     name: "MUI Search Interface",
-    description: "UI of a single page for searching the product",
+    description: "A showcase of the MUI search interface I created as a part of my consulting job",
     techStack: "JS/ES6+, React, Redux Toolkit, CSS, Axios, HTML, MUI, Figma, REST",
     source: "https://github.com/YanaG4/demands-search",
     demo: "https://github.com/YanaG4/demands-search",
@@ -47,7 +47,7 @@ export const projects: Array<ProjectType> = [
   },
   {
     name: "Smart Timer App",
-    description: "It's WIP app, that helps to manage the time, increase focus and productivity. The source code is in the private repo",
+    description: "It's a WIP app, that helps to manage time, increase focus and productivity. The source code is in the private repo.",
     techStack: "JS/ES6+, React, Redux Toolkit, SCSS, HTML, React Hooks, React Router, Responsive design, sound notifications, Jest, RTL",
     demo: "todo",
     image: TH,

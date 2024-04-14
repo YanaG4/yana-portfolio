@@ -27,7 +27,7 @@ export default function Responsibilities() {
           ))}
         </Masonry>
       </ResponsiveMasonry>
-      <div className='section-description'><p>The most convenient part is that I'm a contractor and I can work worldwide for the hours that suits you the most! Right now both part-time and full-time works for me! So please don't hesitate to contact me!</p></div>
+      <div className='section-description'><p><span>Global Availability: </span>Although I'm located in Estonia, I offer my services globally. As a contractor, I'm ready to adapt to your time zone and work requirements, offering both part-time and full-time collaboration. Don't hesitate — let's start making your project a reality today!</p></div>
       <div className='responsibilities__sm'><SocialMedia /></div>
     </section>
   )
