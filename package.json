@@ -1,7 +1,7 @@
 {
   "name": "yana-portfolio",
   "version": "0.1.0",
-  "homepage": "http://yanag4.github.io/yana-portfolio",
+  "homepage": "https://yanag4.github.io/yana-portfolio",
   "private": true,
   "dependencies": {
     "@types/react": "^18.2.74",
