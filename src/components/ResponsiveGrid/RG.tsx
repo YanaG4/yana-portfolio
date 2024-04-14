@@ -53,10 +53,6 @@ export const ResponsiveGrid: React.FC<ResponsiveGridProps> = ({
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(${currentColumns}, 1fr);
-
-    & > * {
-      transition: order 0.3s ease;
-    }
   `;
 
   const orderContextValue: OrderContextType = {

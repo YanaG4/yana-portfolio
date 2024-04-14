@@ -14,6 +14,7 @@ export const StyledChild: React.FC<StyledChildProps> = ({ index, children }) => 
     order: ${getOrder(index)};
     grid-column: ${activeIndex === index ? 'span 2' : 'span 1'};
     grid-row: ${activeIndex === index ? 'span 2' : 'span 1'};
+    transition: order 0.3s ease;
   `;
 
   return <Child>{children}</Child>;
