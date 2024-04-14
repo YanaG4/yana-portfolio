@@ -10,7 +10,7 @@ export interface ProjectsType {
 
 export const projects: Array<ProjectsType> = [
   {
-    description: 'Create a brand new project: from the idea to ready-to-use solution',
+    description: 'Create a brand new project: from the idea to production-ready solution',
     image: lamp,
   },
   {
