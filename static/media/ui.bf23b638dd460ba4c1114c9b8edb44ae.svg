@@ -1,0 +1,23 @@
+<svg width="131" height="140" viewBox="0 0 131 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_358_1023" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-5" y="14" width="138" height="133">
+<path d="M16.2654 14.8994L101.5 25.0002L85.5 51.0002V64.0002L53 113.968L-0.999993 117.207L-5 32.4679L16.2654 14.8994Z" fill="#D9D9D9"/>
+<path d="M132 113.968L133 25.0002L115.5 23.5002L94.5 57.5002L85.5 64.0002L46 118.468L36 129.468V146.468L100 144.468L132 113.968Z" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_358_1023)">
+<rect x="3" y="29.0498" width="125" height="82" rx="9.5" stroke="white" stroke-width="5"/>
+<path d="M45.5 128.05H85.5C89.0899 128.05 92 130.96 92 134.55V138.05H39V134.55C39 130.96 41.9101 128.05 45.5 128.05Z" stroke="white" stroke-width="3"/>
+<rect x="4.5" y="92.5498" width="122" height="4" fill="white"/>
+<path d="M51.6868 127.5L53.6868 110.5H78.7522L80.3522 127.5H51.6868Z" stroke="white" stroke-width="3"/>
+<circle cx="115.5" cy="101.55" r="3" fill="white"/>
+<rect x="18" y="44.0005" width="92" height="42" stroke="white" stroke-width="2"/>
+<rect x="61" y="44" width="49" height="23" stroke="white" stroke-width="2"/>
+<rect x="17.5" y="59.5" width="43" height="1" stroke="white"/>
+<rect x="72.5" y="84.5" width="17" height="1" transform="rotate(-90 72.5 84.5)" stroke="white"/>
+</g>
+<mask id="path-11-inside-1_358_1023" fill="white">
+<path d="M111.557 3.85412C113.352 0.744756 117.328 -0.32059 120.437 1.4746V1.4746C123.546 3.26979 124.612 7.24572 122.817 10.3551L97.2604 54.6198C96.7037 55.5841 95.4707 55.9144 94.5065 55.3577L86.7383 50.8728C85.774 50.3161 85.4437 49.0831 86.0004 48.1189L111.557 3.85412Z"/>
+</mask>
+<path d="M111.557 3.85412C113.352 0.744756 117.328 -0.32059 120.437 1.4746V1.4746C123.546 3.26979 124.612 7.24572 122.817 10.3551L97.2604 54.6198C96.7037 55.5841 95.4707 55.9144 94.5065 55.3577L86.7383 50.8728C85.774 50.3161 85.4437 49.0831 86.0004 48.1189L111.557 3.85412Z" stroke="white" stroke-width="6.048" mask="url(#path-11-inside-1_358_1023)"/>
+<rect x="110.428" y="7.60254" width="12.1052" height="2.69005" transform="rotate(30 110.428 7.60254)" fill="white"/>
+<path d="M86.1616 59.946L86.6546 49.4L95.8239 54.6939L86.9372 60.3938C86.5928 60.6147 86.1425 60.3548 86.1616 59.946Z" stroke="white" stroke-width="2.016"/>
+</svg>

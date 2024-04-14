@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/yana-portfolio/static/css/main.bc7572b8.css",
+    "main.js": "/yana-portfolio/static/js/main.094aaf06.js",
+    "static/js/453.ad8a8fcf.chunk.js": "/yana-portfolio/static/js/453.ad8a8fcf.chunk.js",
+    "static/media/photo.png": "/yana-portfolio/static/media/photo.91a5553590add1c5a78f.png",
+    "static/media/PHC.png": "/yana-portfolio/static/media/PHC.eb82b6a318540f079f19.png",
+    "static/media/YP.png": "/yana-portfolio/static/media/YP.3efa8f302164eb38f7d4.png",
+    "static/media/CConv.png": "/yana-portfolio/static/media/CConv.2ef1ff78b4370a409257.png",
+    "static/media/TH.png": "/yana-portfolio/static/media/TH.94648207918d532ea056.png",
+    "static/media/DS.png": "/yana-portfolio/static/media/DS.811a3c0ac64fe5940bea.png",
+    "static/media/cleancode.svg": "/yana-portfolio/static/media/cleancode.9bf663eebbe62224473a50503d6498d2.svg",
+    "static/media/rocket.svg": "/yana-portfolio/static/media/rocket.40af45fb11c0bc5ffa41b20e55fc0aaf.svg",
+    "static/media/lamp.svg": "/yana-portfolio/static/media/lamp.763c5f8d5729f7e91025568b4d87b185.svg",
+    "static/media/perf.svg": "/yana-portfolio/static/media/perf.e9e52e9311466f195f8801a0ca53cabe.svg",
+    "static/media/chat.svg": "/yana-portfolio/static/media/chat.ba1f423060053fcb3eb035f9e8a8cc7c.svg",
+    "static/media/ui.svg": "/yana-portfolio/static/media/ui.bf23b638dd460ba4c1114c9b8edb44ae.svg",
+    "static/media/code.svg": "/yana-portfolio/static/media/code.08fe5b210cb7a3f7ba6d4e6750ee9ccb.svg",
+    "index.html": "/yana-portfolio/index.html",
+    "main.bc7572b8.css.map": "/yana-portfolio/static/css/main.bc7572b8.css.map",
+    "main.094aaf06.js.map": "/yana-portfolio/static/js/main.094aaf06.js.map",
+    "453.ad8a8fcf.chunk.js.map": "/yana-portfolio/static/js/453.ad8a8fcf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc7572b8.css",
+    "static/js/main.094aaf06.js"
+  ]
+}
