@@ -7,14 +7,16 @@ interface StyledChildProps {
   children: React.ReactNode;
 }
 
+const Child = styled.div<{ order: number; span: number }>`
+  order: ${({ order }) => order};
+  grid-column: ${({ span }) => `span ${span}`};
+  grid-row: ${({ span }) => `span ${span}`};
+`;
+
 export const StyledChild: React.FC<StyledChildProps> = ({ index, children }) => {
   const { getOrder, activeIndex } = useContext(OrderContext);
+  const order = getOrder(index);
+  const span = activeIndex === index ? 2 : 1;
 
-  const Child = styled.div`
-    order: ${getOrder(index)};
-    grid-column: ${activeIndex === index ? 'span 2' : 'span 1'};
-    grid-row: ${activeIndex === index ? 'span 2' : 'span 1'};
-  `;
-
-  return <Child>{children}</Child>;
+  return <Child order={order} span={span}>{children}</Child>;
 };
