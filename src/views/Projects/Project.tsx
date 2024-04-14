@@ -29,8 +29,9 @@ export default function Project({ name, description="", image, demo, source, tec
 
   return (
     <div className={projectClasses} {...rest}>
-      <ProjectWrapper isImage={Boolean(image)} title={name} isShowInfo={isShowInfo && active} >
+      <ProjectWrapper isImage={Boolean(image)} title={name} isShowInfo={isShowInfo && active} isProjectActive={active} >
         <p className="project__description">{description}</p>
+        {!active && <p className='text--show-more'>Show More</p>}
         { active && 
           <>
             {techStack && <p className="project__description"><span>TechStack: </span>{techStack}</p> }
