@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Children, cloneElement, ReactElement } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { OrderContext, OrderContextType } from './Context';
 
