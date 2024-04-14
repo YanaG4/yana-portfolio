@@ -8,9 +8,10 @@ interface ProjectWrapperProps {
   title?: string;
   isShowInfo: boolean;
   children: React.ReactNode;
+  isProjectActive: boolean;
 }
 
-export default function ProjectWrapper({isImage, title, isShowInfo, children}: ProjectWrapperProps) {
+export default function ProjectWrapper({isImage, title, isShowInfo, isProjectActive, children}: ProjectWrapperProps) {
   const overlayWrapperClasses = classNames(
     'overlay-wrapper',
     {
@@ -23,13 +24,20 @@ export default function ProjectWrapper({isImage, title, isShowInfo, children}: P
       'project__overlay--active' : isShowInfo,
     }
   )
+
+  const displayShowMore = !isShowInfo && isProjectActive;
   return (
     <>
     <div className={overlayClasses}></div>
     
       <div className={overlayWrapperClasses}>
         <div className='overlay-content'>
-          {title && <div className="item-heading overlay-title">{title}</div>}
+          {title && 
+            <div className="item-heading overlay-title">
+              {title}
+              {displayShowMore && <p className='text--show-more'>Show More</p>}
+            </div>
+          }
           <div className='project__info'>{children}</div>
         </div>
       </div>

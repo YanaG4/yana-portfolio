@@ -23,18 +23,17 @@ export default function NavBar() {
 
   return (
     <nav className="navbar--top">
-      <ul className={`nav-links ${isOpen ? 'nav-links--open' : 'nav-links--close'}`}>
+      <div className={`nav-links ${isOpen ? 'nav-links--open' : 'nav-links--close'}`}>
       {navItems.map((item) => (
-        <li key={item.to}>
           <Link
+            key={item.to}
             to={item.to}
             text={item.text}
             className='navbar__link--top'
             activeClass='navbar__link--active'
           />
-        </li>
       ))}
-      </ul>      
+      </div>      
       <button ref={burgerRef} className={`navbar__burger ${isOpen ? 'navbar__burger--cross' : ''}`} onClick={() => setIsOpen(!isOpen)}>
         <div></div>
         <div></div>
