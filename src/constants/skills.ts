@@ -28,6 +28,10 @@ const skillDesign: Array<string> = [
   'Figma', 'Adobe Photoshop', 'Adobe Illustrator',
 ]
 
+const skillLanguages: Array<string> = [
+  'English', 'Ukrainian', 'Russian',
+]
+
 const mainSkills: Array<string> = [
   'TypeScript', 'JavaScript', 'React', 'Redux', 'Figma',
 ]
@@ -57,6 +61,10 @@ export const skills: Array<SkillsType> = [
   {
     name: "Design",
     description: skillDesign,
+  }, 
+  {
+    name: "Languages",
+    description: skillLanguages,
   },
 ];
 

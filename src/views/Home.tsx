@@ -13,15 +13,15 @@ export default function Home() {
         I'M  <span>YANA</span></h1>
         <div className='home__text-item'>
           <h2>Frontend Developer </h2>
-          <p>I'm a Frontend Developer with an expertise at JS, TS, React, Redux, CSS and HTML.</p>
+          <p>I'm a Frontend Developer and with 3 years of experience in JS, TS, React, Redux, CSS and HTML, I deliver sleek, efficient, and user-friendly digital experiences.</p>
         </div>
         <div className='home__text-item'>
           <h2>UI/UX Designer</h2>
-          <p>I have 7 years of work experience as a designer, so I can make a Web App look good according to the best UI/UX standards.</p>
+          <p>With 7 years of experience as a designer, I transform functional development into visually stunning and intuitive web applications, all aligned with top UI/UX standards.</p>
         </div>
         <SocialMedia />
         <div className='home__button-container'>
-          <button onClick={() => window.open('https://www.linkedin.com/in/yana-glushychkina-5a5592263', '_blank', 'noopener,noreferrer')}>HIRE ME</button>
+          <button onClick={() => window.open('https://www.linkedin.com/in/yana-glushychkina-5a5592263', '_blank', 'noopener,noreferrer')}>LET'S TALK</button>
           <Link to="responsibilities" smooth={true} duration={500} offset={-72}><button className='secondary-button'>LEARN MORE</button></Link>
         </div>
         </div>

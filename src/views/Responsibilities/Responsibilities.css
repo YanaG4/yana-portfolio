@@ -42,6 +42,11 @@
   text-align: unset;
 }
 
+.responsibilities .section-description span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
 @media (max-width: 600px) {
   .project-types {
     flex-direction: column;
