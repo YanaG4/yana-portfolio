@@ -69,12 +69,15 @@
 
 @media (max-width: 729px) {
   .navbar__link--top {
-    width: 100%;
-    padding: 10px 0;
+    padding: 10px 4px;
   }
 }
 /* burger menu on smaller screens */
 @media screen and (max-width: 500px) {
+  .navbar__link--top {
+    width: 100%;
+    padding: 10px 0;
+  }
   .navbar--top {
     display: flex;
     align-items: center;
