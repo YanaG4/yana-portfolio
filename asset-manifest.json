@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/yana-portfolio/static/css/main.62664a12.css",
-    "main.js": "/yana-portfolio/static/js/main.fc835623.js",
+    "main.css": "/yana-portfolio/static/css/main.1be65175.css",
+    "main.js": "/yana-portfolio/static/js/main.70daa9ad.js",
     "static/js/453.ad8a8fcf.chunk.js": "/yana-portfolio/static/js/453.ad8a8fcf.chunk.js",
     "static/media/photo.png": "/yana-portfolio/static/media/photo.91a5553590add1c5a78f.png",
     "static/media/PHC.png": "/yana-portfolio/static/media/PHC.eb82b6a318540f079f19.png",
@@ -17,12 +17,12 @@
     "static/media/ui.svg": "/yana-portfolio/static/media/ui.bf23b638dd460ba4c1114c9b8edb44ae.svg",
     "static/media/code.svg": "/yana-portfolio/static/media/code.08fe5b210cb7a3f7ba6d4e6750ee9ccb.svg",
     "index.html": "/yana-portfolio/index.html",
-    "main.62664a12.css.map": "/yana-portfolio/static/css/main.62664a12.css.map",
-    "main.fc835623.js.map": "/yana-portfolio/static/js/main.fc835623.js.map",
+    "main.1be65175.css.map": "/yana-portfolio/static/css/main.1be65175.css.map",
+    "main.70daa9ad.js.map": "/yana-portfolio/static/js/main.70daa9ad.js.map",
     "453.ad8a8fcf.chunk.js.map": "/yana-portfolio/static/js/453.ad8a8fcf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62664a12.css",
-    "static/js/main.fc835623.js"
+    "static/css/main.1be65175.css",
+    "static/js/main.70daa9ad.js"
   ]
 }
