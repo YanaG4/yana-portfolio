@@ -16,6 +16,7 @@ export default function ProjectWrapper({isImage, title, isShowInfo, isProjectAct
     'overlay-wrapper',
     {
       'overlay-wrapper--active' : !isImage || isShowInfo,
+      'overlay-wrapper--placeholder' : !isImage && !title,
     }
   )
   const overlayClasses = classNames(

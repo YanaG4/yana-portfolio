@@ -8,16 +8,20 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const burgerRef = useRef<any>(null);
 
-  useEffect(() => {
+  useEffect(() => { 
+    let timer: NodeJS.Timeout | number | undefined = undefined;;
     const handleClick = (event: MouseEvent | TouchEvent) => {
-      if(burgerRef.current && !burgerRef.current.contains(event.target))
-        setIsOpen(false);
+      if (timer) clearTimeout(timer);
+      if(burgerRef.current && !burgerRef.current.contains(event.target)) {
+        timer = setTimeout(() => setIsOpen(false), 200);
+      }
     };
     document.addEventListener('mouseup', handleClick);
     document.addEventListener('touchend', handleClick);
     return () => {
       document.removeEventListener('mouseup', handleClick);
       document.removeEventListener('touchend', handleClick);
+      clearTimeout(timer);
     };
   }, []);
 

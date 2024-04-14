@@ -81,9 +81,6 @@
 .overlay-wrapper--active .project__info {
   opacity: 1;
 }
-.overlay-wrapper--active {
-  cursor: default;
-}
 
 .text--show-more {
   text-transform: uppercase;
@@ -92,6 +89,11 @@
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
-.project:hover .overlay-title .text--show-more {
+.project:hover .overlay-title .text--show-more,
+.overlay-wrapper--placeholder .text--show-more {
   display: none;
+}
+
+.overlay-wrapper--placeholder {
+  cursor: default;
 }
