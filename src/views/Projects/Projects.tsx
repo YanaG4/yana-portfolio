@@ -1,35 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { ProjectType, projects } from '../../constants/projects';
 import Project from './Project';
 import { ResponsiveGrid } from '../../components/ResponsiveGrid/RG';
 import { StyledChild } from '../../components/ResponsiveGrid/RGChild';
+import { isMobile } from 'react-device-detect';
 
 import './Projects.css'
 
 export default function Projects() {
   const [activeProject, setActiveProject] = useState({name: projects[0].name, index: 0, isShowInfo: false});
-  const [lastInteractionType, setLastInteractionType] = useState<string | null>(null);
-
-  useEffect(() => {
-    const resetInteractionType = () => setLastInteractionType(null);
-    window.addEventListener('touchend', resetInteractionType);
-    return () => window.removeEventListener('touchend', resetInteractionType);
-  }, []);
 
   function handleProjectClick(e: React.MouseEvent | React.TouchEvent, name: string, index: number) {
     e.stopPropagation();
     if (!name) return;
 
-    const eventType = e.nativeEvent instanceof TouchEvent ? 'touch' : 'mouse';
-    if (eventType === 'mouse' && lastInteractionType === 'touch') return;  
-    setLastInteractionType(eventType);
 
     if (name === activeProject.name) {
       setActiveProject((prev: any) => ({ ...prev, isShowInfo: !prev.isShowInfo }));
       return;
     }
 
-    const isShowInfoImmediately = eventType === 'touch';
+    const isShowInfoImmediately = isMobile;
     setActiveProject({ name, index, isShowInfo: isShowInfoImmediately });
   }
 
