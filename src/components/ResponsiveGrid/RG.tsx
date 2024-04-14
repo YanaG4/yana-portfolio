@@ -10,9 +10,7 @@ interface ResponsiveGridProps {
 
 const getColumnsForWidth = (width: number, breakpoints: Record<number, number>) => {
   let matchedColumns = 1;
-
   const sortedBreakpoints = Object.keys(breakpoints).map(Number).sort((a, b) => b - a);
-
   for (let breakpoint of sortedBreakpoints) {
     if (width >= breakpoint) {
       matchedColumns = breakpoints[breakpoint];
@@ -30,6 +28,12 @@ const getOrder = (index: number, grid: number, activeIndex: number): number => {
   if (index === activeIndex) return index - 1;
   return index;
 };
+
+const Grid = styled.div<{ $columns: number }>`
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(${props => props.$columns}, 1fr);
+`;
 
 export const ResponsiveGrid: React.FC<ResponsiveGridProps> = ({
   columnsCountBreakPoints,
@@ -49,12 +53,6 @@ export const ResponsiveGrid: React.FC<ResponsiveGridProps> = ({
     return () => window.removeEventListener('resize', handleResize);
   }, [columnsCountBreakPoints]);
 
-  const Grid = styled.div`
-    display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(${currentColumns}, 1fr);
-  `;
-
   const orderContextValue: OrderContextType = {
     getOrder: (index: number) => getOrder(index, currentColumns, activeIndex),
     activeIndex,
@@ -62,7 +60,7 @@ export const ResponsiveGrid: React.FC<ResponsiveGridProps> = ({
 
   return (
     <OrderContext.Provider value={orderContextValue}>
-      <Grid>{children}</Grid>
+      <Grid $columns={currentColumns}>{children}</Grid>
     </OrderContext.Provider>
   );
 };
